@@ -60,3 +60,45 @@ const str = "I'm learning javascript!";
 console.log(str.slice(4,12), str.slice(12, 24));
 console.log(str.substring(4, 12), str.substring(12, 24));
 console.log(str.substr(4, 8), str.substr(12, 24));
+//11
+if (str.indexOf('http://') === 0) {
+  console.log("The string starts with 'http://'");
+} else {
+  console.log("The string does not start with 'http://'");
+}
+
+//12
+const str = 'https://www.notion.html';
+
+if (str.indexOf('.html') === str.length - 5) {
+  console.log("The string ends with '.html'");
+} else {
+  console.log("The string does not end with '.html'");
+}
+
+//13
+const str = 'ab cd cd cd ef';
+console.log(str.lastIndexOf('cd'));//9
+console.log(str.lastIndexOf('cd',8));//6
+
+//14
+const str = 'abcde';
+console.log(str.startswith('abc'));//true
+console.log(str.startswith('xxx'));//false
+console.log(str.startswith('bc',1));//true
+
+//15
+const str = 'abcde';
+console.log(str.endsWith('cde'));//true
+console.log(str.endsWith('xxx'));//false
+console.log(str.endsWith('bc',3));//true
+
+//16
+let str = 'ab-cd-ef';
+console.log(str.split('-'));//["ab", "cd", "ef"]
+console.log(str.split('-'.2));//["ab", "cd"]
+console.log(str.split(''));//["a", "b", "-", "c", "d", "-", "e", "f"]
+console.log(str.split('',3));//["a", "b", "-"]
+
+let str2 ='12345';
+console.log(str2.split(''))//["1", "2", "3", "4", "5"]
